@@ -1,4 +1,4 @@
-Simple application build on React/Readux with SASS modules support.
+Simple application build on React/Redux with SASS modules support.
 
 Installation and running:
 - npm install
