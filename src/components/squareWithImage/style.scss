@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+
+.squareWrapper {
+	width: 90px;
+	height: 150px;
+	background-color: $tiles;
+	position: relative;
+	margin: 5px;
+}
+
+.squareImage {
+	display: block;
+	margin: 15px auto;
+}
+
+.placeholder {
+	font-size: 0.5em;
+	text-align: center;
+	border-top: 1px solid $darkGrey;
+	width: 90%;
+	margin: auto;
+	position: absolute;
+	bottom: 10px;
+	left: 5px;
+	padding-top: 5px;
+}
+
+.circle {
+	@extend .circle;
+}
+
+.darkCircle {
+	@extend .circle;
+	background-color: #000;
+}

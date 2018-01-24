@@ -1,0 +1,134 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.answerWrapper {
+	width: 100%;
+	border: 1px solid $grey;
+	background-color: #fff;
+	position: relative;
+	@include mobile {
+		height: 180px;
+	}
+	@include tablet {
+		display: flex;
+	}
+}
+
+.image {
+	width: 15%;
+	text-align: center;
+	padding-top: 15px;
+	border: 1px solid $grey;
+	@include mobile {
+		border: none;
+		img {
+			width: 30px;
+			height: 30px;
+		}
+	}
+	
+}
+
+.commentWrapper {
+	width: 100%;
+	border: 1px solid $grey;
+	margin-bottom: 50px;
+	background-color: #fff;
+	position: relative;
+	@include mobile {
+		height: 180px;
+	}
+	@include tablet {
+		width: 80%;
+		display: flex;
+		float: right;
+	}
+}
+
+.continue {
+	width: 80%;
+}
+
+.commentHeader {
+	color: $darkGrey;
+	padding: 10px 25px 5px 25px;
+}
+.name {
+	color: $darkBlue;
+}
+
+.commented {
+	color: $darkGrey;
+	padding: 0 10px;
+}
+.dot {
+	vertical-align: 5px;
+    font-size: 1.5em;
+}
+
+.date {
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+	padding: 0 10px;
+}
+
+.content {
+	padding: 10px 25px 45px 25px;
+}
+
+.comments {
+	width: 80%;
+	float: right;
+	font-size: 0.8em;
+	@include mobile {
+		float: right;
+		position: absolute;
+		bottom: 0;
+		top: -5px;
+		left: 50px;
+	}
+}
+
+.upvotes {
+	display: flex;
+	width: 20%;
+}
+
+.upvotesWrapper {
+	text-align: center;
+	@include mobile {
+		font-size: 0.7em;
+		position: absolute;
+		right: 0;
+		z-index: 1;
+		top: 70px;
+	}
+}
+
+.answerButton {
+	@extend .bigButton;
+	margin: auto;
+	position: absolute;
+	padding-top: 12px;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+}
+
+.commentButton {
+	@extend .bigButton;
+	margin: auto;
+	width: 40%;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+	font-size: 0.9em;
+	padding-top: 12px;
+	padding-bottom: 10px;
+	@include smallMobile {
+		padding-top: 5px;
+	}
+}

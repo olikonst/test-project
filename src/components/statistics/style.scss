@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.statiticsWrapper {
+	position: absolute;
+	bottom: 70px;
+	right: 20px;
+	flex-basis: 20%;
+	font-style: italic;
+	background-color: #fff;
+	font-size: 0.9em;
+	@include tablet {
+		position: static;
+		padding: 20px;
+		padding-top: 120px;
+	}
+	@include desktop {
+		right: 20px;
+	}
+	span {
+		display: block;
+		padding-bottom: 25px;
+	}
+
+
+}
+

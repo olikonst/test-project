@@ -1,0 +1,29 @@
+@import '../../styles/variables.scss';
+
+.moreActivitiesWrapper {
+	width: 90px;
+	height: 150px;
+	color: #000;
+	text-align: center;
+	position: relative;
+	font-size: 0.8em;
+	margin: 5px;
+	@include mobile {
+		background-color: $grey;
+	}
+}
+
+.number {
+	position: absolute;
+	top: 30px;
+}
+
+.more {
+	position: absolute;
+	bottom: 10px;
+}
+
+.circle {
+	@extend .circle;
+	bottom: -5px;
+}

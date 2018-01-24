@@ -1,0 +1,4 @@
+export const CREATE_QUESTION_LIST = 'CREATE_QUESTION_LIST';
+
+export const SHOW_MODAL = 'SHOW_MODAL';
+export const HIDE_MODAL = 'HIDE_MODAL';

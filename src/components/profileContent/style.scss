@@ -1,0 +1,79 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.profileContentContainer {
+	width: 100%;
+	text-align: center;
+	margin: 35px auto;
+	p {
+		color: $darkGrey;
+		text-transform: uppercase;
+	}
+	@include desktop {
+		width: 80%;
+	}
+}
+
+.items {
+	display: flex;
+	justify-content: space-between;
+	margin: 25px;
+	h2 {
+		font-size: 1em;
+		@include tablet {
+			font-size: 2.5em;
+		}
+	}
+}
+
+.button {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	color: #fff;
+	background-color: $darkBlue;
+	@include tablet {
+		width: 30px;
+		height: 30px;
+		padding-top: 5px;
+	}
+}
+
+.squaresWrapper {
+	margin: 25px auto;
+	width: 300px;
+	height: 300px;
+	padding-left: 25px;
+	@include  tablet {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.outer {
+	transform: rotate(45deg);
+
+}
+
+.inner {
+	transform: rotate(-45deg);
+}
+
+.leftOuter {
+	transform: rotate(75deg);
+}
+
+.leftInner {
+	transform: rotate(-75deg);
+}
+
+.rightOuter {
+	transform: rotate(-75deg);
+}
+
+.rightInner {
+	transform: rotate(75deg)
+}
+

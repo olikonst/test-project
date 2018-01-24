@@ -1,0 +1,29 @@
+@import '../../styles/variables.scss';
+
+.happySquaresContainer {
+	width: 105px;
+	height: 105px;
+	background-color: $mainBlue;
+	margin: 10px;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	@include mobile {
+		float: left;
+		margin: 10px;
+	}
+}
+
+.number {
+	display: block;
+	font-size: 1.5em;
+	align-self: flex-start;
+}
+
+.text {
+	display: block;
+	font-size: 0.7em;
+	align-self: center;
+	padding-top: 10px;
+}

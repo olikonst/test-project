@@ -1,0 +1,136 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.singleQuesionWrapper {
+	position: relative;
+	background-color: $background;
+	width: 100%;
+	margin: auto;
+	@include desktop {
+		width: 95%;
+	}
+}
+
+.wrapper {
+	width: 100%;
+	margin: auto;
+	@include desktop {
+		width: 70%;
+	}
+}
+
+.questionContainer {
+	background-color: $mainBlue;
+	padding: 20px;
+	font-size: 1em;
+	flex-basis: 100%;
+	height: 300px;
+	color: $darkGrey;
+	@include tablet {
+		height: 250px;
+	}
+}
+
+.detailsWrapper {
+	background-color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 220px;
+    width: 100%;
+    padding: 10px;  
+    @include tablet {
+    	display: flex;
+    	justify-content: space-between;
+    	width: 90%;
+    	height: 180px;
+    	padding: 25px;
+    }
+}
+
+.details {
+	flex-basis: 70%;
+	font-size: 0.8em;
+}
+
+.upvotes {
+	margin-left: 35px;
+	display: flex;
+	float: right;
+}
+
+.unfollow {
+	color: $darkBlue;
+    font-size: 0.93em;
+    margin-top: 35px;
+    margin-right: 15px;
+    @include tablet {
+    	position: absolute;
+    	right: 10px;
+    	bottom: 200px;
+    }
+  }
+
+.answerButton {
+	@extend .bigButton;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 280px;
+	@include tablet {
+		top: 350px;
+		bottom: 700px;
+	}
+}
+
+.commentsWrapper {
+	margin-top: 100px;
+}
+
+.peer {
+	text-align: center;
+	padding: 15px;
+	font-style: italic;
+}
+
+.question {
+	margin-left: 10%;
+	@include mobile {
+		bottom: 0;
+	    font-size: 0.9em;
+	    margin: 0;
+	}
+}
+ 
+ .image {
+ 	width: 10%;
+ 	img {
+ 		@include mobile {
+	 		width: 30px;
+	 		height: 30px;
+ 		}
+ 	}
+ }
+
+ .name {
+ 	@include mobile {
+ 		font-size: 0.63em;
+ 		vertical-align: 10px;
+ 		margin-left: 15px;
+ 	}
+ }
+
+ .asking {
+ 	@include mobile {
+ 		font-size: 0.63em;
+ 		vertical-align: 10px;
+ 	}
+ }
+
+ .customHeader {
+	height: 90px;
+	h1 {
+		margin-left: 10%;
+	}
+}

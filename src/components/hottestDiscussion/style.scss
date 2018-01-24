@@ -1,0 +1,56 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.hottestDiscussionContainer {
+	width: 100%;
+	height: 200px;
+	color: $darkGrey;
+	text-align: center;
+	font-size: 0.9em;
+	@extend .linearBackground;
+	img {
+		display: block;
+		margin: auto;
+		position: relative;
+		top: -30px;
+	}
+	@include tablet {
+		height: 150px;
+	}
+}
+
+.name {
+	color: $darkBlue;
+	margin: 10px;
+}
+
+.title {
+	margin-bottom: 20px;
+	color: $darkBlue;
+
+}
+
+.items {
+	color: #000;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+	@include mobile {
+		span {
+			padding: 5px;
+			font-size: 0.9em;
+			flex: 1 1 50%;
+		}
+
+		:first-of-type{
+			order: 2;
+		}
+		:last-of-type {
+			order: 2;
+		}
+	}
+	@include tablet {
+		display: flex;
+		justify-content: space-around;
+	}
+}

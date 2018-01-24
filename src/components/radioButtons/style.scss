@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.radioButtonWrapper {
+	display: none;
+	@include desktop {
+		display: block;
+	}
+	
+}
+.label {
+	padding-left: 15px;
+	font-size: 0.9em;
+}
+
+.input {
+	margin-right: 10px;
+}
+

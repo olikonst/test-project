@@ -1,0 +1,57 @@
+/*COLORS*/
+@import './mixins.scss';
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Libre Baskerville', serif;
+}
+
+
+ $mainBlue: #DFF3FD;
+ $mainYellow: #FFE1AD;
+ $background: #FBFBFB;
+ $darkBlue: #0266B3;
+ $grey: #EEEEEE;
+ $darkGrey: #A7A9AC;
+ $tiles: #efefef;
+
+.bigButton {
+	width: 50%;
+	@include tablet {
+		width: 30%
+	}
+	height: 39px;
+	border: 1px solid $darkGrey;
+	text-align: center;
+	padding-top: 9px;
+	font-weight: bold;
+	font-size: 1em;
+	background-color: #fff;
+}
+
+
+.circle {
+	display: block;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	background-color: #a8aaae;
+	position: absolute;
+	bottom: -5px;
+	left: 40px;
+	margin: auto;
+}
+
+.linearBackground {
+	background: repeating-linear-gradient(
+  		45deg, #fff, $grey 5px,
+    	#fff 5px,
+    	$grey 5px
+  	);
+}
+
+
+
+

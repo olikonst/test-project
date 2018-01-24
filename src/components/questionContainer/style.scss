@@ -1,0 +1,58 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.questionWrapper {
+	position: relative;
+	flex-basis: 100%;
+	@include tablet {
+		flex-basis: 70%;
+	}
+}
+
+.questionImage {
+	display: inline-block;
+	width: 20%;
+}
+
+
+.name {
+	color: $darkBlue;
+	font-weight: bold;
+	font-size: 1em;
+	vertical-align: 30px;
+}
+
+.asking {
+	vertical-align: 30px;
+	font-size: 0.66em;
+}
+
+a {
+	text-decoration: none;
+	color: $darkBlue;
+	&:visited {
+		color: $darkBlue;
+	}
+}
+
+.question {
+	color: $darkBlue;
+	font-style: italic;
+	font-size: 0.9em;
+	margin-left: 20%;
+	position: relative;
+	bottom: 20px;
+}
+
+.asked {
+	font-size: 0.66em;
+	border-top: 1px solid $darkGrey;
+	padding: 5px;
+	position: absolute;
+    bottom: 80px;
+    left: 25px;
+    display: none;
+    @include desktop {
+    	display: block;
+    }
+}

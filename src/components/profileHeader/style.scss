@@ -1,0 +1,61 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.profileHeaderContainer {
+	width: 100%;
+	height: 370px;
+	padding: 25px;
+	margin: auto;
+	text-align: center;
+	border-bottom: 1px solid $darkGrey;
+	@include tablet {
+		height: 220px;
+	}
+	img {
+		width: 80px;
+		height: 80px;
+	}
+}
+
+.name {
+	color: $darkBlue;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 15px;
+}
+
+.wrapper {
+	color: $darkGrey;
+	font-size: 0.9em;
+	@include mobile {
+		p {
+			margin: 20px;
+		}
+	}
+	@include tablet {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		font-size: 0.8em;
+	}
+	@include desktop {
+		font-size: 0.9em;
+	}
+}
+
+.activity {
+	img {
+		height: 30px;
+		width: 80px;
+		margin: auto;
+		vertical-align: middle;
+	}
+}
+
+.item {
+	display: block;
+	color: #000;
+	@include tablet {
+		display: inline;
+	}
+}

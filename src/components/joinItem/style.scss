@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.joinedItemContainer {
+	width: 90px;
+	height: 150px;
+	margin: 5px;
+	p {
+		text-transform: initial;
+		color: $darkBlue;
+		font-weight: bold;
+		font-size: 0.90em;
+		padding-top: 10px;
+	}
+}
+
+.square {
+	width: 90px;
+	height: 90px;
+  	@extend .linearBackground;
+  	img {
+  		padding-top: 20px;
+  		padding-bottom: 20px;
+  	}
+}
